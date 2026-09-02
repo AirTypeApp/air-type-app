@@ -3,103 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Air Type</title>
+    <title>Contact Support - Air Type</title>
     <style>
         body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; text-align: center; background-color: #d1d5db; overflow-x: hidden; }
-        header { background: linear-gradient(135deg, #007bff, #0056b3); color: white; padding: 60px 20px; border-bottom-left-radius: 40px; border-bottom-right-radius: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 1000px; margin: 0 auto; }
-        .container { padding: 40px 20px; max-width: 1000px; margin: 0 auto; }
-        .contact-card { background: #cbd5e1; padding: 40px; border-radius: 25px; box-shadow: 0 10px 25px rgba(0,0,0,0.15); text-align: left; max-width: 700px; margin: 0 auto; border-top: 5px solid #007bff; }
-        
-        h2 { color: #0056b3; margin-top: 0; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 10px; }
-        h3 { color: #d32f2f; margin-bottom: 10px; font-size: 1.2em; }
-        
-        .info-box { background: #eef7ff; padding: 25px; border-radius: 15px; margin: 20px 0; border-left: 5px solid #007bff; }
-        .deletion-box { background: #ffebee; padding: 25px; border-radius: 15px; margin: 20px 0; border-left: 5px solid #d32f2f; }
-        
-        .info-row { display: flex; margin-bottom: 15px; flex-wrap: wrap; }
-        .label { font-weight: bold; color: #0056b3; width: 150px; flex-shrink: 0; }
-        .value { word-break: break-all; color: #333; }
-        
-        .btn-policy { 
-            display: inline-block; 
-            background: #e1f5fe; 
-            color: #01579b; 
-            padding: 10px 22px; 
-            text-decoration: none; 
-            border-radius: 30px; 
-            margin-top: 20px; 
-            font-size: 0.95em; 
-            font-weight: 600;
-            transition: 0.3s ease;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-        }
-        .btn-policy:hover { 
-            background: #00b0ff; 
-            color: #fff; 
-            transform: scale(1.05);
-            box-shadow: 0 4px 12px rgba(0,176,255,0.4);
-        }
-
-        footer { background: #1a1a1a; color: white; padding: 40px 0; margin-top: 60px; width: 100%; }
-
-        @media (max-width: 600px) {
-            .label { width: 100%; margin-bottom: 5px; }
-            .contact-card { padding: 25px; }
-            header { padding: 40px 15px; }
-        }
+        header { background: linear-gradient(135deg, #007bff, #0056b3); color: white; padding: 40px 20px; border-bottom-left-radius: 40px; border-bottom-right-radius: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); max-width: 1000px; margin: 0 auto; }
+        .container { padding: 40px 20px; max-width: 800px; margin: 0 auto; text-align: left; }
+        .content-section { background: #cbd5e1; padding: 25px; border-radius: 15px; margin-bottom: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-left: 5px solid #007bff; }
+        h2, h3 { color: #0056b3; margin-top: 0; border-bottom: 2px solid rgba(0,0,0,0.1); padding-bottom: 10px; }
+        ul, ol { padding-left: 20px; margin: 10px 0; }
+        li { margin-bottom: 8px; }
+        .btn-policy { display: inline-block; background: #e1f5fe; color: #01579b; padding: 10px 22px; text-decoration: none; border-radius: 30px; margin: 20px 0; font-size: 0.95em; font-weight: 600; transition: 0.3s ease; box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
+        .btn-policy:hover { background: #00b0ff; color: #fff; transform: scale(1.05); box-shadow: 0 4px 12px rgba(0,176,255,0.4); }
+        .btn-delete { display: inline-block; background: #dc3545; color: white; padding: 12px 24px; text-decoration: none; border-radius: 30px; margin: 15px 0; font-weight: bold; font-size: 0.95em; transition: 0.3s ease; box-shadow: 0 2px 8px rgba(220,53,69,0.3); cursor: pointer; border: none; }
+        .btn-delete:hover { background: #bd2130; transform: scale(1.03); }
+        footer { background: #1a1a1a; color: white; padding: 30px 0; margin-top: 40px; text-align: center; }
     </style>
 </head>
 <body>
-
-<header>
-    <h1>Contact Support</h1>
-    <p>We're here to help you with any questions or technical issues.</p>
-</header>
-
-<div class="container">
-    <div class="contact-card">
-        <h2>Get in Touch</h2>
-        <p>If you have any questions, feedback, or need technical support regarding Air Type, please feel free to reach out to us.</p>
+    <header>
+        <h1>Contact Support</h1>
+        <p>We're here to help you with any questions or technical issues.</p>
+    </header>
+    <div class="container">
         
-        <div class="info-box">
-            <div class="info-row">
-                <div class="label">Email:</div>
-                <div class="value">remoteairtypeapp@gmail.com</div>
-            </div>
-            <div class="info-row">
-                <div class="label">Support Hours:</div>
-                <div class="value">Mon - Fri (10 AM - 6 PM IST)</div>
-            </div>
-            <div class="info-row">
-                <div class="label">Response Time:</div>
-                <div class="value">Within 24-48 Hours</div>
-            </div>
-            <div class="info-row">
-                <div class="label">Location:</div>
-                <div class="value">Patna, Bihar, India</div>
-            </div>
+        <div class="content-section">
+            <h2>Get in Touch</h2>
+            <p>If you have any questions, feedback, or need technical support regarding <strong>Air Type</strong>, please feel free to reach out to us.</p>
+            <ul>
+                <li><strong>Email:</strong> remoteairtypeapp@gmail.com</li>
+                <li><strong>Support Hours:</strong> Mon - Fri (10 AM - 6 PM IST)</li>
+                <li><strong>Response Time:</strong> Within 24-48 Hours</li>
+                <li><strong>Location:</strong> Patna, Bihar, India</li>
+            </ul>
         </div>
 
-        <div class="deletion-box">
-            <h3>Account Deletion Request</h3>
-            <p>At Air Type, we respect your privacy. If you wish to delete your account and all associated data (including your email and profile information), please follow these steps:</p>
-            <p>1. Send an email to <strong>remoteairtypeapp@gmail.com</strong>.</p>
-            <p>2. Use the subject line: <strong>"Account Deletion Request"</strong>.</p>
-            <p>3. We will verify your request and permanently delete your account and data from our servers within <strong>48 to 72 hours</strong>.</p>
+        <div class="content-section">
+            <h2>Account Deletion Request</h2>
+            <p>At Air Type, we respect your privacy. If you wish to delete your account and all associated authentication data (including your email and profile information), please follow these steps:</p>
+            <ol>
+                <li>Click the request button below or send an email to <strong>remoteairtypeapp@gmail.com</strong>.</li>
+                <li>Use the subject line: <strong>"Account Deletion Request"</strong>.</li>
+                <li>We will verify your request and permanently delete your account and data from our authentication systems within <strong>48 to 72 hours</strong>.</li>
+            </ol>
+            
+            <!-- Universal Smart Email Button -->
+            <div style="text-align: center;">
+                <button onclick="openSmartEmail()" class="btn-delete">📩 Send Deletion Request Email</button>
+            </div>
+
+            <p><strong>Note:</strong> For payment-related queries, please mention your <strong>Google Play Order ID (GPA.XXXX-XXXX-XXXX-XXXXX)</strong> in the email for faster resolution.</p>
         </div>
-        <p style="background: #fff3cd; padding: 15px; border-radius: 10px; color: #856404; font-size: 0.95em; border-left: 4px solid #856404;">
-            <strong>Note:</strong> For payment-related queries, please mention your <strong>Razorpay Transaction ID</strong> in the email for faster resolution.
-        </p>
 
         <div style="text-align: center;">
             <a href="index.html" class="btn-policy">← Back to Home</a>
         </div>
     </div>
-</div>
+    <footer><p>© 2026 Air Type Official. All rights reserved.</p></footer>
 
-<footer>
-    <p>© 2026 Air Type Official. All rights reserved.</p>
-</footer>
+    <script>
+        function openSmartEmail() {
+            var email = "remoteairtypeapp@gmail.com";
+            var subject = encodeURIComponent("Account Deletion Request");
+            var body = encodeURIComponent("Hello Air Type Support Team,\n\nI would like to request the permanent deletion of my account and associated data.\n\nRegistered Email:\nReason (Optional):");
 
+            // Check if user is on Mobile/Tablet
+            var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+            if (isMobile) {
+                // Open native mail app on phones
+                window.location.href = "mailto:" + email + "?subject=" + subject + "&body=" + body;
+            } else {
+                // Open Gmail Web Composer on Desktop/Laptop
+                var gmailWebUrl = "https://mail.google.com/mail/?view=cm&fs=1&to=" + email + "&su=" + subject + "&body=" + body;
+                window.open(gmailWebUrl, '_blank');
+            }
+        }
+    </script>
 </body>
 </html>
