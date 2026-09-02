@@ -14,24 +14,53 @@
         .btn-indus { background: #ffcc00; color: #000; }
         .btn-main:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(0,0,0,0.3); opacity: 0.9; }
 
-
-        /* Pricing Section - Updated for Mobile Horizontal View */
+        /* Pricing Section - Updated with Amounts */
         .pricing-card { 
             background: #eef7ff; 
             border: 2px solid #007bff; 
             padding: 30px; 
             border-radius: 25px; 
             display: inline-block; 
-            margin: 40px auto; /* Centered */
+            margin: 40px auto; 
             min-width: 320px; 
-            max-width: 90%; /* Responsive for phone */
+            max-width: 90%; 
             position: relative; 
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
         }
 
-        .pricing-card h3 { color: #01579b; margin-top: 10px; }
-        .price { font-size: 2.8em; font-weight: bold; color: #007bff; margin: 10px 0; }
-        .badge { background: #ff4757; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.8em; position: absolute; top: -15px; right: 20px; }
+        .pricing-card h3 { color: #01579b; margin-top: 10px; margin-bottom: 5px; }
+        .badge { background: #ff4757; color: white; padding: 5px 15px; border-radius: 20px; font-size: 0.8em; position: absolute; top: -15px; right: 20px; font-weight: bold; }
+        
+        .plan-list { 
+            text-align: left; 
+            margin: 20px 0; 
+            padding: 0; 
+            list-style: none;
+        }
+        .plan-item { 
+            background: #ffffff; 
+            padding: 12px 16px; 
+            margin-bottom: 10px; 
+            border-radius: 12px; 
+            border: 1px solid #cce5ff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 600;
+        }
+        .plan-price { 
+            color: #007bff; 
+            font-size: 1.1em; 
+            font-weight: bold; 
+        }
+        .savings-tag {
+            background: #28a745;
+            color: white;
+            font-size: 0.75em;
+            padding: 2px 8px;
+            border-radius: 10px;
+            margin-left: 6px;
+        }
 
         /* Screenshots Section */
         .screenshots { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin: 40px 0; }
@@ -52,7 +81,7 @@
         ul, ol { padding-left: 20px; }
         li { margin-bottom: 10px; }
         
-        /* Footer - Full Wide Update */
+        /* Footer */
         .policy-footer { 
             background: #222; 
             color: white; 
@@ -64,7 +93,7 @@
             display: inline-block; 
             background: #e1f5fe; 
             color: #01579b; 
-            padding: 12px 0; /* Padding adjust for uniform look */
+            padding: 12px 0; 
             text-decoration: none; 
             border-radius: 30px; 
             margin: 8px; 
@@ -72,8 +101,8 @@
             font-weight: 600;
             transition: 0.3s ease;
             box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-            width: 160px; /* Sabka size ek jaisa karne ke liye fix width */
-            text-align: center; /* Text center mein rahe */
+            width: 160px; 
+            text-align: center; 
         }
         .btn-policy:hover { 
             background: #00b0ff; 
@@ -82,16 +111,19 @@
             box-shadow: 0 4px 12px rgba(0,176,255,0.4);
         }
 
-        /* Mobile specific fix for Pricing Horizontal alignment */
+        /* Mobile Responsive */
         @media (max-width: 600px) {
             .pricing-card {
-                padding: 20px;
+                padding: 20px 15px;
                 min-width: unset;
-                width: 85%;
+                width: 90%;
             }
-            .price { font-size: 2.2em; }
+            .plan-item {
+                font-size: 0.9em;
+                padding: 10px;
+            }
             .btn-policy {
-                width: 140px; /* Mobile par thoda chhota size taaki screen par fit rahe */
+                width: 140px; 
                 font-size: 0.85em;
             }
         }
@@ -110,14 +142,29 @@
 
 <div class="container">
    
+    <!-- Updated Pricing Section with Amounts -->
     <div style="text-align: center;">
         <div class="pricing-card">
-            <div class="badge">Best Value</div>
-            <h3>Pro Subscription</h3>
-            <p>30-Day Free Trial Included</p>
-            <div class="price">₹205</div>
-            <p><strong>Lifetime Premium Access</strong></p>
-            <p><small>Secure one-time payment via Razorpay</small></p>
+            <div class="badge">7-Day Free Trial</div>
+            <h3>Pro Subscription Plans</h3>
+            <p style="margin-bottom: 20px;"><small>Try all premium features free for 7 days!</small></p>
+            
+            <div class="plan-list">
+                <div class="plan-item">
+                    <span>🗓️ Monthly Plan</span>
+                    <span class="plan-price">₹100</span>
+                </div>
+                <div class="plan-item">
+                    <span>🗓️ 6-Month Plan</span>
+                    <span class="plan-price">₹200</span>
+                </div>
+                <div class="plan-item" style="border: 2px solid #28a745; background: #f4fff6;">
+                    <span>⭐ Yearly Plan <span class="savings-tag">Best Savings</span></span>
+                    <span class="plan-price" style="color: #28a745;">₹300</span>
+                </div>
+            </div>
+
+            <p><small>In-App Purchases processed securely via <strong>Google Play Billing</strong>.</small></p>
         </div>
     </div>
 
@@ -179,5 +226,3 @@
 </body>
 
 </html>
-
-
